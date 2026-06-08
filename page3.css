@@ -1,0 +1,450 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:'Quicksand',sans-serif;
+
+background:
+linear-gradient(
+rgba(0,0,0,.25),
+rgba(0,0,0,.25)
+),
+url("images/bg.jpg");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+
+color:white;
+
+overflow-x:hidden;
+}
+
+/* HERO */
+
+.hero{
+
+text-align:center;
+
+padding:100px 20px 80px;
+}
+
+.hero h1{
+
+font-size:80px;
+
+font-family:'Dancing Script',cursive;
+
+margin-bottom:20px;
+
+text-shadow:0 0 20px rgba(255,255,255,.3);
+}
+
+.hero p{
+
+font-size:22px;
+
+max-width:700px;
+
+margin:auto;
+
+line-height:1.8;
+}
+
+/* CAROUSEL */
+
+.carousel-section{
+
+padding:70px 20px;
+
+text-align:center;
+}
+
+.carousel-section h2{
+
+font-family:'Dancing Script',cursive;
+
+font-size:60px;
+
+margin-bottom:30px;
+}
+
+.carousel-box{
+
+width:90%;
+
+max-width:850px;
+
+margin:auto;
+
+background:rgba(255,255,255,.12);
+
+padding:25px;
+
+border-radius:25px;
+}
+
+.carousel-box img{
+
+width:100%;
+
+height:450px;
+
+object-fit:contain;
+
+background:white;
+
+border-radius:20px;
+}
+
+#memoryText{
+
+margin-top:20px;
+
+font-size:22px;
+
+line-height:1.8;
+
+padding:10px;
+}
+
+/* MEMORY WALL */
+
+.memory-wall{
+
+padding:80px 20px;
+}
+
+.memory-wall h2{
+
+font-family:'Dancing Script',cursive;
+
+font-size:60px;
+
+text-align:center;
+
+margin-bottom:40px;
+}
+
+#photoGrid{
+
+columns:4 220px;
+
+column-gap:15px;
+}
+
+.photo-card{
+
+break-inside:avoid;
+
+margin-bottom:15px;
+
+background:rgba(255,255,255,.12);
+
+border-radius:20px;
+
+overflow:hidden;
+
+padding-bottom:10px;
+}
+
+.photo-card img{
+
+width:100%;
+
+display:block;
+
+border-radius:20px 20px 0 0;
+
+transition:.3s;
+}
+
+.photo-card img:hover{
+
+transform:scale(1.03);
+}
+
+.photo-card p{
+
+padding:12px;
+
+font-size:15px;
+
+line-height:1.6;
+
+text-align:center;
+}
+
+/* AUDIO */
+
+.audio-card{
+
+width:90%;
+
+max-width:850px;
+
+margin:35px auto;
+
+padding:25px;
+
+text-align:center;
+
+background:rgba(255,255,255,.12);
+
+border-radius:25px;
+}
+
+.audio-card h2{
+
+font-family:'Dancing Script',cursive;
+
+font-size:48px;
+
+margin-bottom:15px;
+}
+
+.audio-card audio{
+
+width:100%;
+}
+
+/* VIDEO */
+
+.video-section{
+
+width:90%;
+
+max-width:850px;
+
+margin:35px auto;
+
+padding:25px;
+
+text-align:center;
+
+background:rgba(255,255,255,.12);
+
+border-radius:25px;
+}
+
+.video-section h2{
+
+font-family:'Dancing Script',cursive;
+
+font-size:48px;
+
+margin-bottom:20px;
+}
+
+.video-section video{
+
+width:60%;
+
+max-width:450px;
+
+display:block;
+
+margin:auto;
+
+border-radius:20px;
+}
+
+/* TIME CAPSULE */
+
+.capsule{
+
+padding:80px 20px;
+
+text-align:center;
+}
+
+.capsule h2{
+
+font-family:'Dancing Script',cursive;
+
+font-size:65px;
+
+margin-bottom:20px;
+}
+
+.capsule p{
+
+font-size:20px;
+
+margin-bottom:40px;
+}
+
+.capsule-grid{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+flex-wrap:wrap;
+}
+
+.person-box{
+
+width:320px;
+
+background:rgba(255,255,255,.12);
+
+padding:25px;
+
+border-radius:20px;
+}
+
+.person-box h3{
+
+font-size:28px;
+
+margin-bottom:15px;
+}
+
+.person-box textarea{
+
+width:100%;
+
+height:220px;
+
+padding:15px;
+
+border:none;
+
+border-radius:15px;
+
+resize:none;
+
+font-size:16px;
+}
+
+.person-box button{
+
+margin-top:15px;
+
+padding:12px 25px;
+
+border:none;
+
+border-radius:30px;
+
+background:#ffd966;
+
+font-size:16px;
+
+cursor:pointer;
+
+transition:.3s;
+}
+
+.person-box button:hover{
+
+transform:scale(1.05);
+}
+
+/* FINAL SECTION */
+
+.final-section{
+
+padding:80px 20px 120px;
+
+text-align:center;
+}
+
+.final-section h2{
+
+font-family:'Dancing Script',cursive;
+
+font-size:60px;
+
+margin-bottom:30px;
+}
+
+.journey-btn{
+
+padding:18px 40px;
+
+font-size:20px;
+
+border:none;
+
+border-radius:40px;
+
+background:#ffd966;
+
+cursor:pointer;
+
+transition:.3s;
+}
+
+.journey-btn:hover{
+
+transform:scale(1.08);
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:55px;
+}
+
+.hero p{
+
+font-size:18px;
+}
+
+.carousel-section h2,
+.memory-wall h2,
+.audio-card h2,
+.video-section h2,
+.capsule h2,
+.final-section h2{
+
+font-size:42px;
+}
+
+.carousel-box img{
+
+height:280px;
+}
+
+#memoryText{
+
+font-size:18px;
+}
+
+#photoGrid{
+
+columns:2 150px;
+}
+
+.video-section video{
+
+width:95%;
+}
+
+.person-box{
+
+width:100%;
+}
+
+.person-box textarea{
+
+height:180px;
+}
+
+.journey-btn{
+
+width:90%;
+}
+
+}

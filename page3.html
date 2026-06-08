@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Our Memories ❤️</title>
+
+<link rel="stylesheet" href="page3.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- Background Music -->
+
+<audio id="bgMusic" loop>
+    <source src="audio/memories-song.mp3" type="audio/mp3">
+</audio>
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+<h1>Our Memories ❤️</h1>
+
+<p>
+Some friendships are written in notebooks.
+Ours is written in memories. ❤️
+</p>
+
+</section>
+
+<!-- Favourite Moments Carousel -->
+
+<section class="carousel-section">
+
+<h2>📸 Our Favourite Moments</h2>
+
+<div class="carousel-box">
+
+<img
+id="slideImage"
+src="images/slide1.jpg"
+alt="Memory Photo">
+
+<p id="memoryText">
+
+Some people enter your life quietly and become your favourite chapter forever ❤️
+
+</p>
+
+</div>
+
+</section>
+
+<!-- Pinterest Memory Wall -->
+
+<section class="memory-wall">
+
+<h2>🌻 Memory Wall 🌻</h2>
+
+<div id="photoGrid"></div>
+
+</section>
+
+<!-- Tamanna Audio -->
+
+<section class="audio-card">
+
+<h2>🎙️ A Little Message For Tamanna ❤️</h2>
+
+<audio controls>
+
+<source src="audio/tamanna.mp3" type="audio/mp3">
+
+</audio>
+
+</section>
+
+<!-- Riya Audio -->
+
+<section class="audio-card">
+
+<h2>🎙️ A Little Message For Riya ❤️</h2>
+
+<audio controls>
+
+<source src="audio/riya.mp3" type="audio/mp3">
+
+</audio>
+
+</section>
+
+<!-- Dance Video -->
+
+<section class="video-section">
+
+<h2>💃 Our Dance Memory 💃</h2>
+
+<video controls preload="metadata">
+
+<source src="video/dance.mp4" type="video/mp4">
+
+</video>
+
+</section>
+
+<!-- Time Capsule -->
+
+<section class="capsule">
+
+<h2>💌 Future Time Capsule</h2>
+
+<p>
+
+Write your dreams for the future.
+One day we'll come back and read them again ✨
+
+</p>
+
+<div class="capsule-grid">
+
+<div class="person-box">
+
+<h3>Rekha 🌸</h3>
+
+<textarea
+id="rekhaBox"
+placeholder="What do you want to become in future?">
+</textarea>
+
+<button onclick="saveCapsule('rekhaBox')">
+Save
+</button>
+
+</div>
+
+<div class="person-box">
+
+<h3>Tamanna 🌷</h3>
+
+<textarea
+id="tamannaBox"
+placeholder="What do you want to become in future?">
+</textarea>
+
+<button onclick="saveCapsule('tamannaBox')">
+Save
+</button>
+
+</div>
+
+<div class="person-box">
+
+<h3>Riya 🌼</h3>
+
+<textarea
+id="riyaBox"
+placeholder="What do you want to become in future?">
+</textarea>
+
+<button onclick="saveCapsule('riyaBox')">
+Save
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- Final Section -->
+
+<section class="final-section">
+
+<h2>❤️ One Last Surprise Awaits ❤️</h2>
+
+<button
+class="journey-btn"
+onclick="goToFinalPage()">
+
+Continue The Journey ✨
+
+</button>
+
+</section>
+
+<script src="page3.js"></script>
+
+</body>
+</html>

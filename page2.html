@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Best Friends Challenge 💌</title>
+
+<link rel="stylesheet" href="page2.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<section class="hero">
+
+<h1>The Best Friends Challenge 💌</h1>
+
+<p class="intro">
+Before we continue this journey...
+<br><br>
+There's something I want from you.
+<br>
+Not answers.
+<br>
+Not guesses.
+<br>
+Just memories.
+</p>
+
+<div class="progress-container">
+
+<h3>Journey Progress</h3>
+
+<div class="progress-bar">
+<div class="progress-fill"></div>
+</div>
+
+<p>50% Complete ✨</p>
+
+</div>
+
+</section>
+
+<section class="rules-card">
+
+<h2>📜 Rules</h2>
+
+<ul>
+
+<li>❌ No help from anyone</li>
+
+<li>❌ No old chats</li>
+
+<li>❌ No photos</li>
+
+<li>❌ No asking each other</li>
+
+<li>✅ Only memories</li>
+
+<li>⚠ Once submitted, you cannot edit it again.</li>
+
+</ul>
+
+</section>
+
+<section class="secret-note">
+
+<div class="envelope" onclick="openLetter()">
+💌 Open A Little Note
+</div>
+
+<div class="letter hidden" id="letter">
+
+<p>
+
+If you're reading this...
+
+<br><br>
+
+Then you've already survived our friendship 😭❤️
+
+<br><br>
+
+Now tell the story from your side.
+
+<br><br>
+
+I'm ready to hear every detail.
+
+</p>
+
+</div>
+
+</section>
+
+<section class="diary-cover-section">
+
+<div class="diary-cover" id="openDiary">
+
+<img src="images/group-photo.jpg">
+
+<h3>📖 OUR STORY</h3>
+
+<p>Click To Open ✨</p>
+
+</div>
+
+</section>
+
+<section class="diary-section hidden" id="diarySection">
+
+<div class="diary-page">
+
+<img src="images/group-photo.jpg" class="top-photo">
+
+<h2>To My Best Friends ❤️</h2>
+
+<p class="memory-text">
+
+Every friendship has two stories.
+
+<br>
+
+The one everyone sees.
+
+<br>
+
+And the one only we remember.
+
+<br>
+
+This diary is for the second one.
+
+</p>
+
+<h3>Tell Our Story ✨</h3>
+
+<p class="prompt">
+
+From the day we met until today...
+
+Tell the story only you remember.
+
+<br><br>
+
+✨ The fights
+
+<br>
+
+✨ The chaos
+
+<br>
+
+✨ The embarrassing moments
+
+<br>
+
+✨ The secrets
+
+<br>
+
+✨ The moments that made us friends
+
+<br>
+
+✨ The moments that kept us friends
+
+</p>
+
+<textarea
+id="storyBox"
+placeholder="Start writing here..."></textarea>
+
+<p id="saveStatus">
+💾 Draft saved automatically
+</p>
+
+<div class="buttons">
+
+<button onclick="saveStory()">
+Save Draft 💾
+</button>
+
+<button onclick="submitStory()">
+Seal This Story ✨
+</button>
+
+<button
+id="continueBtn"
+class="continue-btn"
+onclick="goToPage3()">
+
+Continue The Journey ✨
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<script src="page2.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+min-height: 100vh;
+overflow-x: hidden;
+font-family: 'Caveat', cursive;
+}
+
+/* =======================
+   BACKGROUND
+======================= */
+
+ .bg {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background:
+linear-gradient(rgba(0,0,0,.45), rgba(0,0,0,.45)),
+url("images/bg.jpg");
+background-size: cover;
+background-position: center;
+filter: none;
+transform: scale(1.1);
+z-index: -1;
+} 
+
+/* =======================
+   BORDER DECORATION
+======================= */
+.top-border {
+position: absolute;
+top: 10px;
+width: 100%;
+text-align: center;
+font-size: 28px;
+}
+
+.left-border,
+.right-border {
+position: absolute;
+top: 100px;
+font-size: 28px;
+line-height: 70px;
+}
+
+.left-border {
+left: 10px;
+}
+
+.right-border {
+right: 10px;
+}
+
+/* =======================
+   MAIN CONTENT
+======================= */
+.content {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: white;
+}
+
+.content h1 {
+font-size: 90px;
+text-shadow: 0 0 15px rgba(255,255,255,.5);
+}
+
+.subtitle {
+font-size: 40px;
+margin-top: 15px;
+}
+
+.emoji-text {
+font-size: 30px;
+margin-top: 20px;
+}
+
+/* =======================
+   START BUTTON
+======================= */
+#startBtn {
+margin-top: 30px;
+padding: 16px 40px;
+border: none;
+border-radius: 50px;
+background: #ffd54f;
+font-size: 25px;
+cursor: pointer;
+transition: 0.3s ease;
+}
+
+#startBtn:hover {
+transform: scale(1.05);
+}
+
+/* =======================
+   EMOJIS
+======================= */
+.emoji {
+position: absolute;
+font-size: 90px;
+cursor: pointer;
+transition: 0.4s ease;
+filter: drop-shadow(0 0 12px rgba(255,255,255,.5));
+}
+
+.emoji:hover {
+transform: scale(1.2) rotate(10deg);
+}
+
+.pizza {
+left: 130px;
+bottom: 150px;
+}
+
+.cookie {
+right: 130px;
+bottom: 150px;
+}
+
+.cupcake {
+left: 220px;
+top: 180px;
+}
+
+.noodles {
+right: 220px;
+top: 180px;
+}
+
+/* =======================
+   POPUP (COMMON)
+======================= */
+.popup {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,.75);
+justify-content: center;
+align-items: center;
+z-index: 10;
+}
+
+.popup-box {
+background: white;
+padding: 30px;
+border-radius: 20px;
+text-align: center;
+max-width: 90%;
+}
+
+/* Popup Image */
+.popup-box img {
+width: 450px;
+max-width: 100%;
+border-radius: 15px;
+}
+
+/* Inputs */
+.popup-box input {
+padding: 10px;
+width: 250px;
+border: 1px solid #ccc;
+border-radius: 8px;
+}
+
+/* Buttons inside popup */
+.popup-box button {
+padding: 10px 20px;
+margin: 5px;
+border: none;
+border-radius: 8px;
+cursor: pointer;
+transition: 0.3s ease;
+}
+
+/* Primary button */
+.popup-box button:hover {
+transform: scale(1.05);
+}
+
+/* Hint text */
+#hintText {
+margin-top: 15px;
+color: red;
+font-size: 20px;
+}
+
+/* Back button special */
+.popup-box button:last-child {
+background: #ff6b6b;
+color: white;
+}
+
+/* Submit button look */
+.popup-box button:nth-child(3) {
+background: #ffd54f;
+}
+
+/* =======================
+   RESPONSIVE
+======================= */
+@media (max-width: 768px) {
+
+.content h1 {
+font-size: 50px;
+}
+
+.subtitle {
+font-size: 25px;
+}
+
+.emoji-text {
+font-size: 18px;
+}
+
+.emoji {
+font-size: 60px;
+}
+
+.popup-box img {
+width: 250px;
+}
+}
