@@ -24,8 +24,12 @@ color:white;
 overflow-x:hidden;
 }
 
+/* HERO */
+
 .hero{
+
 text-align:center;
+
 padding:100px 20px 50px;
 }
 
@@ -49,54 +53,7 @@ max-width:700px;
 margin:auto;
 }
 
-.progress-container{
-
-margin-top:40px;
-
-text-align:center;
-}
-
-.progress-bar{
-
-width:300px;
-
-height:15px;
-
-background:rgba(255,255,255,.2);
-
-margin:15px auto;
-
-border-radius:50px;
-
-overflow:hidden;
-}
-
-.progress-fill{
-
-height:100%;
-
-width:50%;
-
-background:
-linear-gradient(
-90deg,
-#ffd966,
-#fff2b3
-);
-
-animation:fillBar 2s ease;
-}
-
-@keyframes fillBar{
-
-from{
-width:0;
-}
-
-to{
-width:50%;
-}
-}
+/* RULES */
 
 .rules-card{
 
@@ -127,7 +84,11 @@ margin-bottom:20px;
 list-style:none;
 
 line-height:2.3;
+
+font-size:18px;
 }
+
+/* SECRET NOTE */
 
 .secret-note{
 
@@ -151,6 +112,13 @@ border-radius:20px;
 cursor:pointer;
 
 font-weight:600;
+
+transition:.3s;
+}
+
+.envelope:hover{
+
+transform:scale(1.05);
 }
 
 .letter{
@@ -168,11 +136,16 @@ background:rgba(255,255,255,.15);
 backdrop-filter:blur(10px);
 
 border-radius:20px;
+
+line-height:1.8;
 }
 
 .hidden{
+
 display:none;
 }
+
+/* DIARY COVER */
 
 .diary-cover-section{
 
@@ -223,7 +196,16 @@ border-radius:10px;
 font-family:'Dancing Script',cursive;
 
 font-size:40px;
+
+margin-top:15px;
 }
+
+.diary-cover p{
+
+margin-top:10px;
+}
+
+/* DIARY */
 
 .diary-section{
 
@@ -266,6 +248,8 @@ margin-bottom:25px;
 font-family:'Dancing Script',cursive;
 
 font-size:50px;
+
+margin-bottom:15px;
 }
 
 .memory-text{
@@ -282,6 +266,8 @@ margin:20px 0;
 line-height:2;
 
 margin:25px 0;
+
+font-size:17px;
 }
 
 textarea{
@@ -294,9 +280,18 @@ padding:20px;
 
 border-radius:15px;
 
+border:2px solid #ddd;
+
 resize:none;
 
 font-size:16px;
+
+outline:none;
+}
+
+textarea:focus{
+
+border-color:#ffd966;
 }
 
 #saveStatus{
@@ -307,6 +302,8 @@ font-size:14px;
 
 opacity:.8;
 }
+
+/* BUTTONS */
 
 .buttons{
 
@@ -332,40 +329,94 @@ cursor:pointer;
 background:#ffd966;
 
 font-size:15px;
+
+transition:.3s;
+}
+
+button:hover{
+
+transform:scale(1.05);
 }
 
 .continue-btn{
+
 display:none;
+
+background:#ffd966;
 }
+
+.edit-btn{
+
+display:none;
+
+background:#9be7a7;
+
+color:#222;
+}
+
+/* MOBILE */
 
 @media(max-width:768px){
 
+.hero{
+
+padding:80px 20px 40px;
+}
+
 .intro{
+
 font-size:18px;
 }
 
+.rules-card h2{
+
+font-size:40px;
+}
+
+.rules-card ul{
+
+font-size:16px;
+}
+
 .diary-page{
+
 padding:25px;
 }
 
 .diary-page h2,
 .diary-page h3{
+
 font-size:38px;
 }
 
 .top-photo{
+
 height:220px;
 }
 
+.memory-text{
+
+font-size:18px;
+}
+
+.prompt{
+
+font-size:16px;
+}
+
 textarea{
+
 height:280px;
 }
 
 .buttons{
+
 flex-direction:column;
 }
 
 button{
+
 width:100%;
 }
+
 }

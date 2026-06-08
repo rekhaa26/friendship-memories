@@ -13,35 +13,37 @@
 </head>
 <body>
 
+<!-- HERO -->
+
 <section class="hero">
 
 <h1>The Best Friends Challenge 💌</h1>
 
 <p class="intro">
+
 Before we continue this journey...
+
 <br><br>
+
 There's something I want from you.
+
 <br>
+
 Not answers.
+
 <br>
+
 Not guesses.
+
 <br>
+
 Just memories.
+
 </p>
 
-<div class="progress-container">
-
-<h3>Journey Progress</h3>
-
-<div class="progress-bar">
-<div class="progress-fill"></div>
-</div>
-
-<p>50% Complete ✨</p>
-
-</div>
-
 </section>
+
+<!-- RULES -->
 
 <section class="rules-card">
 
@@ -59,16 +61,20 @@ Just memories.
 
 <li>✅ Only memories</li>
 
-<li>⚠ Once submitted, you cannot edit it again.</li>
+<li>⚠ You can unlock and edit the story later if needed.</li>
 
 </ul>
 
 </section>
 
+<!-- SECRET NOTE -->
+
 <section class="secret-note">
 
 <div class="envelope" onclick="openLetter()">
+
 💌 Open A Little Note
+
 </div>
 
 <div class="letter hidden" id="letter">
@@ -95,11 +101,13 @@ I'm ready to hear every detail.
 
 </section>
 
+<!-- DIARY COVER -->
+
 <section class="diary-cover-section">
 
 <div class="diary-cover" id="openDiary">
 
-<img src="images/group-photo.jpg">
+<img src="images/group-photo.jpg" alt="Group Photo">
 
 <h3>📖 OUR STORY</h3>
 
@@ -109,11 +117,16 @@ I'm ready to hear every detail.
 
 </section>
 
+<!-- DIARY SECTION -->
+
 <section class="diary-section hidden" id="diarySection">
 
 <div class="diary-page">
 
-<img src="images/group-photo.jpg" class="top-photo">
+<img
+src="images/group-photo.jpg"
+class="top-photo"
+alt="Friends">
 
 <h2>To My Best Friends ❤️</h2>
 
@@ -174,17 +187,34 @@ id="storyBox"
 placeholder="Start writing here..."></textarea>
 
 <p id="saveStatus">
-💾 Draft saved automatically
+
+💾 Draft saved automatically every 10 seconds
+
 </p>
+
+<!-- BUTTONS -->
 
 <div class="buttons">
 
 <button onclick="saveStory()">
+
 Save Draft 💾
+
 </button>
 
 <button onclick="submitStory()">
+
 Seal This Story ✨
+
+</button>
+
+<button
+id="editBtn"
+class="edit-btn"
+onclick="editStory()">
+
+Edit Story ✏️
+
 </button>
 
 <button
