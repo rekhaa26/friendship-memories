@@ -117,24 +117,53 @@ filter: drop-shadow(0 0 12px rgba(255,255,255,.5));
 transform: scale(1.2) rotate(10deg);
 }
 
-.pizza {
+/* .pizza {
 left: 130px;
 bottom: 150px;
+} */
+
+.cupcake{
+position:absolute;
+top:180px;
+left:120px;
+font-size:70px;
 }
 
-.cookie {
+/* .cookie {
 right: 130px;
 bottom: 150px;
+} */
+
+.noodles{
+position:absolute;
+top:180px;
+right:120px;
+font-size:70px;
 }
 
-.cupcake {
+/* .cupcake {
 left: 220px;
 top: 180px;
+} */
+
+.pizza{
+position:absolute;
+bottom:120px;
+left:80px;
+font-size:70px;
 }
 
-.noodles {
+
+/* .noodles {
 right: 220px;
 top: 180px;
+} */
+
+.cookie{
+position:absolute;
+bottom:120px;
+right:80px;
+font-size:70px;
 }
 
 /* =======================
