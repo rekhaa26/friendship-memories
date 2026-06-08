@@ -7,17 +7,22 @@
 <title>Best Friends Day ❤️</title>
 
 <link rel="stylesheet" href="style.css">
+
 <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
 <div class="bg"></div>
 
-<!-- Main -->
+<!-- Main Content -->
+
 <div class="content">
 
-<h1>Happy Best Friends Day ❤️</h1>
+<h1>
+Happy Best Friends Day ❤️
+</h1>
 
 <p class="subtitle">
 A journey full of chaos,<br>
@@ -28,48 +33,89 @@ memories and friendship ✨
 Click an emoji to unlock hidden memories ✨
 </p>
 
-<button id="startBtn">Start Journey ✨</button>
+<button id="startBtn">
+Start Journey ✨
+</button>
 
 </div>
 
 <!-- Emojis -->
-<div class="emoji pizza" onclick="openMemory('photo1.jpg')">🍕</div>
-<div class="emoji cookie" onclick="openMemory('photo2.jpg')">🍪</div>
-<div class="emoji cupcake" onclick="openMemory('photo3.jpg')">🧁</div>
-<div class="emoji noodles" onclick="openMemory('photo4.jpg')">🍜</div>
+
+<div class="emoji pizza"
+onclick="openMemory('photo1.jpg')">
+🍕
+</div>
+
+<div class="emoji cookie"
+onclick="openMemory('photo2.jpg')">
+🍪
+</div>
+
+<div class="emoji cupcake"
+onclick="openMemory('photo3.jpg')">
+🧁
+</div>
+
+<div class="emoji noodles"
+onclick="openMemory('photo4.jpg')">
+🍜
+</div>
 
 <!-- Memory Popup -->
+
 <div class="popup" id="popup">
+
 <div class="popup-box">
 
 <img id="popupImage">
 
 <br><br>
 
-<button onclick="closeMemory()">Close ❤️</button>
+<button onclick="closeMemory()">
+Close ❤️
+</button>
 
 </div>
+
 </div>
 
 <!-- Question Popup -->
+
 <div class="popup" id="questionPopup">
+
 <div class="popup-box">
 
-<h2>Before You Continue 😏</h2>
+<h2>
+Before You Continue 😏
+</h2>
 
-<p>What is the most dangerous animal in the world?</p>
+<p>
+What is the most dangerous animal in the world?
+</p>
 
-<input type="text" id="animalAnswer" placeholder="Type your answer">
+<input
+type="text"
+id="animalAnswer"
+placeholder="Type your answer">
 
 <br><br>
 
-<button onclick="checkAnimal()">Submit</button>
-<button onclick="showHint()">Hint</button>
-<button onclick="closeQuestion()">Back</button>
+<button onclick="checkAnimal()">
+Submit
+</button>
+
+<button onclick="showHint()">
+Hint
+</button>
+
+<button onclick="closeQuestion()">
+Back
+</button>
 
 <p id="hintText"></p>
 
 </div>
+
 </div>
 
 <script src="script.js"></script>
